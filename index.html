@@ -3,21 +3,20 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Throwerror.io - Come soon</title>
     <meta name="keywords" content="throwerror.io">
     <meta name="description" content="throwerror.io">
-    <link href='https://cdn.webfont.youziku.com/webfonts/nomal/105388/47008/596f7d6af629d8112c648be9.css' rel='stylesheet' type='text/css' />
     <style type="text/css">
-      @font-face {
-        font-family: 'webfont';
-        src: url('//at.alicdn.com/t/ubnro400oilfpqfr.eot'); /* IE9*/
-        src: url('//at.alicdn.com/t/ubnro400oilfpqfr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('//at.alicdn.com/t/ubnro400oilfpqfr.woff') format('woff'), /* chrome、firefox */
-        url('//at.alicdn.com/t/ubnro400oilfpqfr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('//at.alicdn.com/t/ubnro400oilfpqfr.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
-      }
+    @font-face {
+      font-family: specialSymbol;
+      src: local('PingFang SC'), local('Microsoft Yahei');
+      unicode-range: U+02C2, U+02C3, U+003C, U+003E, U+3009;
+    }
+    @font-face {
+      font-family: 'DINRegular';
+      src: url('/static/fonts/DIN-Regular.ttf');
+    }
       @keyframes background {
         0% { background-image: url(/static/images/bg-3.jpg); }
         33% { background-image: url(/static/images/bg-1.jpg); }
@@ -33,6 +32,7 @@
         -webkit-font-smoothing: antialiased;
         overflow-x: hidden;
         background: #fff;
+        font-family: DINRegular, -webkit-pictograph, serif, sans-serif;
       }
       .video,
       .background,
@@ -72,14 +72,13 @@
         justify-content: center;
         letter-spacing: 0.035em;
         background-color: rgba(238, 238, 238, 0.5);
-        font-family: -webkit-pictograph, serif, sans-serif;
       }
       .container h1 {
         margin: 0;
-        font-size: 48px;
+        font-size: 49px;
         font-weight: 700;
         text-align: center;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
         text-transform: uppercase;
       }
       .container h2 {
@@ -91,22 +90,24 @@
         border-bottom: 1px solid;
         padding-bottom: 11px;
       }
+      .container h1,
+      .container h2,
       .container p {
-        font-family: "webfont";
+        /* text-shadow: 0px 0px 2px #999999; */
       }
     </style>
   </head>
   <body>
     <div class="video">
       <div class="video-wrap" id="J_video_wrap">
-        <video src="https://static.surmon.me/comesoon.mp4" id="J_video" autoplay></video>
+        <video src="/static/videos/comesoon.mp4" id="J_video" autoplay></video>
       </div>
     </div>
     <div class="background"></div>
     <div class="container">
       <h2 class="cssc00ab317619bac">Throwerror.io</h2>
       <h1 class="cssc00ab317619bac">Come Soon</h1>
-      <p>享受便捷有趣的开发过程</p>
+      <p>Throw, Catch, Resolve</p>
     </div>
   </body>
   <script type="text/javascript">
