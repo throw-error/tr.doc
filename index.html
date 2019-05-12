@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Throwerror.io - Come soon</title>
+    <meta name="keywords" content="throwerror.io">
+    <meta name="description" content="throwerror.io">
+    <link href='https://cdn.webfont.youziku.com/webfonts/nomal/105388/47008/596f7d6af629d8112c648be9.css' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+      @font-face {
+        font-family: 'webfont';
+        src: url('//at.alicdn.com/t/ubnro400oilfpqfr.eot'); /* IE9*/
+        src: url('//at.alicdn.com/t/ubnro400oilfpqfr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('//at.alicdn.com/t/ubnro400oilfpqfr.woff') format('woff'), /* chrome、firefox */
+        url('//at.alicdn.com/t/ubnro400oilfpqfr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url('//at.alicdn.com/t/ubnro400oilfpqfr.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
+      }
+      @keyframes background {
+        0% { background-image: url(/static/images/bg-3.jpg); }
+        33% { background-image: url(/static/images/bg-1.jpg); }
+        66% { background-image: url(/static/images/bg-2.jpg); }
+        100% { background-image: url(/static/images/bg-3.jpg); }
+      }
+      html, body {
+        position: relative;
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        background: #fff;
+      }
+      .video,
+      .background,
+      .container {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .background {
+        z-index: 1;
+        animation: background 24s steps(1) infinite;
+        background-image: url(/static/images/bg-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .video {
+        z-index: 2;
+      }
+      .video .video-wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .video video {
+        min-width: 100%;
+        min-height: 100%;
+        display: block;
+        object-fit: cover;
+        background-color: transparent;
+      }
+      .container {
+        z-index: 3;
+        color: #ffffff;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 0.035em;
+        background-color: rgba(238, 238, 238, 0.5);
+        font-family: -webkit-pictograph, serif, sans-serif;
+      }
+      .container h1 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+      .container h2 {
+        margin-top: 0;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        padding-bottom: 11px;
+      }
+      .container p {
+        font-family: "webfont";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video">
+      <div class="video-wrap" id="J_video_wrap">
+        <video src="https://static.surmon.me/comesoon.mp4" id="J_video" autoplay></video>
+      </div>
+    </div>
+    <div class="background"></div>
+    <div class="container">
+      <h2 class="cssc00ab317619bac">Throwerror.io</h2>
+      <h1 class="cssc00ab317619bac">Come Soon</h1>
+      <p>享受便捷有趣的开发过程</p>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var player = document.getElementById('J_video')
+    var player_wrap = document.getElementById('J_video_wrap')
+    player.onended = function() {
+      player_wrap.innerHTML = ''
+      // console.log('stop', player_wrap)
+    }
+  </script>
+</html>

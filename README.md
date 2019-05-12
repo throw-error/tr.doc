@@ -1,4 +1,3 @@
 
-# doc.throwerror.io
+# Throwerror.io
 
-Throwerror 开发者文档
