@@ -1,2 +1,4 @@
-# errend.io
-官网及开发者文档
+
+# doc.throwerror.io
+
+Throwerror 开发者文档
